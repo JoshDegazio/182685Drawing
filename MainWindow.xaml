@@ -1,0 +1,17 @@
+﻿<Window x:Class="_182685Drawing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_182685Drawing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <StackPanel DockPanel.Dock="Bottom">
+        <Canvas DockPanel.Dock="Top" x:Name="canvas" Height="400"></Canvas>
+        <RadioButton x:Name="rbRec" Content="Rectangle" Checked="RbRec_Checked"/>
+        <RadioButton x:Name="rbEli" Content="Ellipse" Checked="RbEli_Checked"/>
+        <Button x:Name="setColour" Click="SetColour_Click" Content="Set Colour" />
+        <TextBox x:Name="txtInput" Text="Format input numbers as follows: X Offset, Y Offset, Width, Height"/>
+        <Button x:Name="btnDraw" Click="BtnDraw_Click" Content="Draw"/>
+    </StackPanel>
+</Window>
